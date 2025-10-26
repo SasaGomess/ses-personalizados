@@ -7,8 +7,6 @@ export default function Cabecalho() {
     return (
         <header>
             <img src={Logo} alt="Logo S&S" />
-
-            <nav className={style.cabecalho_links}>
                 <div className={style.links_conteudo}>
                     <p>Home</p>
                     <p>Catálogo</p>
@@ -17,11 +15,9 @@ export default function Cabecalho() {
                         <img src={Caneta} alt="Caneta Espaco Criativo" />
                         Espaço Criativo
                     </button>
-                </div>
-                
-                <Button
+                    <Button
                 texto="Quero Personalizar" />
-            </nav>
+                </div>
         </header>
     )
 }

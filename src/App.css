@@ -7,3 +7,9 @@
   box-sizing: border-box;
   position: relative;
 }
+h1{
+  font-family: "Poppins", sans-serif;
+}
+p, h3{
+  font-family: "Nunito", sana;
+}

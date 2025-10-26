@@ -4,11 +4,12 @@ header {
   display: flex;
   align-items: center;
   padding: 0 10px 0 10px;
+  justify-content: space-between;
   gap: 138px;
   background-image: linear-gradient(
     to right,
     rgb(241, 241, 241),
-    rgb(160, 160, 160)
+    rgb(221, 221, 221)
   );
   border-radius: 100px;
   font-family: "Poppins", sans-serif;
@@ -18,25 +19,19 @@ header {
     height: 65px;
   }
 }
-.cabecalho_links,
+
 .links_conteudo,
 button {
   display: flex;
 }
-.cabecalho_links {
-  align-items: center;
-  gap: 14px;
-  justify-content: center;
-  width: 100%;
-}
 .links_conteudo {
-  width: 74%;
-  justify-content: center;
+ width: 100%;
+  justify-content: space-between;
   align-items: center;
   gap: 10%;
   font-size: 20px;
   padding-right: 10px;
-  border-right: 1px solid #222;
+ 
    
 
   & p {

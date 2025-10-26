@@ -26,6 +26,12 @@ footer{
     justify-content: space-around;
     gap: 12px;
     padding-bottom: 30px;
+
+    & p, h3{
+    font-weight: 600;
+    color: #fff;
+    
+}
 }
 .sociais{
     display: flex;
@@ -35,11 +41,9 @@ footer{
       height: 47px;  
     }
 }
-p, h3{
-    font-weight: 600;
-    color: #fff;
-    font-family:  "Nunito", sans-serif;
-}
+
 .copy{
     padding-top: 15px;
+    font-weight: 600;
+    color: #fff;
 }
