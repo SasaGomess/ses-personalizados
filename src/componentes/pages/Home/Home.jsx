@@ -4,6 +4,7 @@ import IconesConteudo from "../../ui/IconesConteudo/IconesConteudo.jsx";
 import GaleriaProdutos from "../../layout/GaleriaProdutos/GaleriaProdutos.jsx";
 import ComoFazerPedido from "../../layout/ComoFazerPedido/ComoFazerPedido.jsx";
 import SobreSes from "../../layout/SobreSes/SobreSes.jsx";
+import CtaFinal from "../../layout/CTAFinal/CtaFinal.jsx";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <GaleriaProdutos />
       <ComoFazerPedido />
       <SobreSes />
+      <CtaFinal/>
     </main>
   );
 }

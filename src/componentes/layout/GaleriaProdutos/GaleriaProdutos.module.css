@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 .galeria {
-  gap: 32px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -26,6 +26,7 @@
 .produto_caneca_conteudo {
   align-items: center;
   width: 100%;
+  
 
   & img {
     height: 400px;
@@ -45,13 +46,20 @@
     border-radius: 35px;
     font-size: 20px;
     font-weight: 600;
-    z-index: 1000;
+    z-index: 1;
     cursor: pointer;
-    top: 87%;
+    top: 93%;
+    box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.185);
+ ;
   }
   .button_canecas:hover {
     transform: scale(1.09);
   }
+}
+
+.produto_caneca_conteudo:hover{
+  transform: scale(1.02);
+
 }
 
 .galeria_produtos_card {

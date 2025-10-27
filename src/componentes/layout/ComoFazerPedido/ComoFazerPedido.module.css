@@ -5,7 +5,7 @@
     align-items: center;
     gap: 25px;
     flex-direction: column;
-    padding: 30px;
+    padding: 80px;
 
     & h1{
         color: #fff;

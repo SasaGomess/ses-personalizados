@@ -3,8 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap:40px;
-    margin-bottom: 120px;
+
     padding: 0 10%;
 
     & p{
@@ -15,29 +16,46 @@
 .sobre_imagens{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    & .card_um{
-        width: 525px;
-        height:390px;
-        border-radius: 20px;
-        background-image: url(../../../assets/imagens/produtos.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-right: 30%;
+    gap: 5%;
+    background-color: #FFE66D;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 20px;
+    & p{
+        width: 46%;
+       font-size: 23px;
+        font-weight: 700;
     }
 
+
     & .card_dois{
-        width: 747px;
+        width: 45%;
         height: 490px;
         border-radius: 20px;
-        background-image: url(../../../assets/imagens/mulher_compras.jpg);
+        background-image: url(../../../assets/imagens/mae_filha.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        
-        margin-left: 40%;
+        box-shadow: 5px 0 20px 10px rgba(255, 222, 5, 0.667);
     
     }
+
+}
+
+.sparkle{
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    right: 90%;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

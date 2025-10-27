@@ -4,6 +4,13 @@ import Caneta from '../../../assets/imagens/caneta.png'
 import Button from '../../ui/Button/Button'
 
 export default function Cabecalho() {
+
+    const abrirWhats = () => {
+window.open(
+      "https://wa.me/5511962510307?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar!",
+      "_blank"
+    );
+    }
     return (
         <header>
             <img src={Logo} alt="Logo S&S" />
@@ -15,12 +22,13 @@ export default function Cabecalho() {
                     <a href="#como_personalizar">
                         <button className={style.espaco_criativo}>
                         <img src={Caneta} alt="Caneta Espaco Criativo" />
-                        Espaço Criativo
+                        Como Personalizar
                     </button>
                     </a>
                     
                     <Button
-                texto="Quero Personalizar" />
+                texto="Quero Comprar"
+                onClick={abrirWhats} />
                 </nav>
         </header>
     )

@@ -12,10 +12,6 @@ export default function IconesConteudo() {
         <p>Sem Pedido Mínimo</p>
       </div>
       <div className={style.icone_conteudo_info}>
-        <img src={Editor} alt="" />
-        <p>Editor Online</p>
-      </div>
-      <div className={style.icone_conteudo_info}>
         <img src={Camiseta} alt="" />
         <p>Pesonalize Como Quiser</p>
       </div>

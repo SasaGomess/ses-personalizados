@@ -9,10 +9,10 @@ export default function Rodape() {
             <div className={style.rodape_conteudo}>
                 <div className={style.navegacao}>
                     <h3>Navegue & Crie</h3>
-                    <p>Catálogo</p>
-                    <p>Sobre Nós</p>
-                    <p>Espaço Criativo</p>
-                    <p>Home</p>
+                    <a href="#galeria_fotos">Catálogo</a>
+                    <a href="#sobreses">Sobre Nos</a>
+                    <a href="#como_personalizar">Como Fazer o Pedido</a>
+                    <a href="#home">Home</a>
                 </div>
                 <img src={Logo} alt="Logo s&s Personalizados" />
                 <div className={style.contato}>
