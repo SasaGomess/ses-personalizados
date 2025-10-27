@@ -2,9 +2,14 @@ import style from './Rodape.module.css'
 import Logo from '../../../assets/imagens/logo_footer.png'
 import Insta from '../../../assets/imagens/instagram.png'
 import Whats from '../../../assets/imagens/whatsapp.png'
+import Onda from '../../../assets/imagens/onda.png'
 
 export default function Rodape() {
     return (
+        <>
+        <div className={style.onda}>
+            <img src={Onda} alt="" />
+        </div>
         <footer>
             <div className={style.rodape_conteudo}>
                 <div className={style.navegacao}>
@@ -20,12 +25,16 @@ export default function Rodape() {
                     <p>+55 (11) 9625-0307 - Telefone / WhatsApp</p>
                     <p>ses_contato@gmail.com</p>
                     <div className={style.sociais}>
-                        <img src={Insta} alt="Logo Instagram" />
+                        <a href="https://www.instagram.com/personaliza_ses/">
+                            <img src={Insta} alt="Logo Instagram" />
+                        </a>
+                        
                         <img src={Whats} alt="Logo WhatsApp" />
                     </div>
                 </div>
             </div>
             <p className={style.copy}>©2025 S&S Personalizados. Todos os Direitos Reservados</p>
         </footer>
+        </>
     )
 }

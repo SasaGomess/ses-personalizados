@@ -33,12 +33,10 @@
         width: 45%;
         height: 490px;
         border-radius: 20px;
-        background-image: url(../../../assets/imagens/mae_filha.jpg);
+        background-image: url(../../../assets/imagens/mae_filha.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
-        box-shadow: 5px 0 20px 10px rgba(255, 222, 5, 0.667);
-    
     }
 
 }

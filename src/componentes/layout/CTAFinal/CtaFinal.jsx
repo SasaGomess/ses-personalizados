@@ -1,6 +1,6 @@
 import style from "./CtaFinal.module.css";
 import Button from "../../ui/Button/Button";
-import HeroImagem from '../../../assets/imagens/hero_img.png'
+import Caneca from '../../../assets/imagens/caneca.png'
 
 export default function CtaFinal() {
         const abrirWhats = () => {
@@ -13,6 +13,7 @@ window.open(
   <section className={style.cta}>
 
       <h1>Deixe a S&S fazer parte do seu <span className={style.rosa}>momento especial 💫</span> </h1>
+      <img className={style.caneca_icon} src={Caneca} alt="" />
       <p>Cada produto é preparado com o carinho de quem ama o que faz. Fale com a gente e vamos criar juntos algo inesquecível!</p>
       <Button 
       texto="Quero Meu Personalizado"

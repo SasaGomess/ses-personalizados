@@ -8,7 +8,7 @@ footer{
 .rodape_conteudo{
     display: flex;
     border-bottom: 2px solid #fff;
-    width: fit-content;
+    width: 45%;
     gap: 132px;
     align-items: start;
     justify-content: center;
@@ -21,6 +21,7 @@ footer{
 }
 .navegacao,
 .contato{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,4 +47,14 @@ footer{
     padding-top: 15px;
     font-weight: 600;
     color: #fff;
+}
+.onda{
+    width: 100%;
+    height: 160px;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        
+    }
 }
