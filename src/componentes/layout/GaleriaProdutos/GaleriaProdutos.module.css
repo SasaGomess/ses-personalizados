@@ -1,0 +1,95 @@
+.galeria,
+.galeria_caneca,
+.produto_caneca_conteudo,
+.produtos_copos_conteudo,
+.produtos_azulejos_conteudo,
+.galeria_produtos_card,
+.produtos_camiseta_conteudo {
+  display: flex;
+}
+.galeria,
+.galeria_caneca,
+.produto_caneca_conteudo {
+  flex-direction: column;
+}
+.galeria {
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.galeria_caneca {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.produto_caneca_conteudo {
+  align-items: center;
+  width: 100%;
+
+  & img {
+    height: 400px;
+    height: 50%;
+    object-fit: contain;
+  }
+
+  & .button_canecas {
+    position: absolute;
+    width: 500px;
+    height: 45px;
+    display: flex;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 1000;
+    cursor: pointer;
+    top: 56%;
+  }
+  .button_canecas:hover {
+    transform: scale(1.09);
+  }
+}
+
+.galeria_produtos_card {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.produtos_copos_conteudo {
+  background-image: url(../../../assets/imagens/coposgarrafas.png);
+}
+.produtos_camiseta_conteudo {
+  background-image: url(../../../assets/imagens/camiseta_galeria.png);
+}
+.produtos_camiseta_conteudo,
+.produtos_azulejos_conteudo,
+.produtos_copos_conteudo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 360px;
+  height: 493px;
+  justify-content: center;
+  align-items: end;
+  border-radius: 15px;
+  box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.185);
+}
+.produtos_azulejos_conteudo {
+  background-image: url(../../../assets/imagens/azulejos.png);
+}
+.produto_descricao {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 10px;
+  border-radius: 0 0 15px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}

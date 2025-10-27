@@ -13,3 +13,7 @@ h1{
 p, h3{
   font-family: "Nunito", sana;
 }
+body{
+  padding-top: 20px;
+  display: flex;
+}

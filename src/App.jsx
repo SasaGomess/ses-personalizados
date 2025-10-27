@@ -6,11 +6,11 @@ import Rodape from './componentes/layout/Rodape/Rodape';
 
 function App() {
   return (
-    <>
+    <body>
     <Cabecalho />
     <Home />
     <Rodape />
-    </>
+    </body>
   )
 }
 
