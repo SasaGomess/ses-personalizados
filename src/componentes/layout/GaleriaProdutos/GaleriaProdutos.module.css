@@ -47,7 +47,7 @@
     font-weight: 600;
     z-index: 1000;
     cursor: pointer;
-    top: 56%;
+    top: 87%;
   }
   .button_canecas:hover {
     transform: scale(1.09);
@@ -76,6 +76,7 @@
   align-items: end;
   border-radius: 15px;
   box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.185);
+  transition: 0.2s ease-in all;
 }
 .produtos_azulejos_conteudo {
   background-image: url(../../../assets/imagens/azulejos.png);
@@ -92,4 +93,9 @@
   border-radius: 0 0 15px 15px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+}
+.produtos_camiseta_conteudo:hover,
+.produtos_azulejos_conteudo:hover,
+.produtos_copos_conteudo:hover{
+  transform: scale(1.09);
 }

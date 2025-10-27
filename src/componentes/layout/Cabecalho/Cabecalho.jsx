@@ -7,17 +7,21 @@ export default function Cabecalho() {
     return (
         <header>
             <img src={Logo} alt="Logo S&S" />
-                <div className={style.links_conteudo}>
-                    <p>Home</p>
-                    <p>Catálogo</p>
-                    <p>Sobre nós</p>
-                    <button className={style.espaco_criativo}>
+                <nav className={style.links_conteudo}>
+                    <a href="#home">Home</a>
+                    <a href="#galeria_fotos">Catálogo</a>
+                    <a href="#sobreses">Sobre nós</a>
+
+                    <a href="#como_personalizar">
+                        <button className={style.espaco_criativo}>
                         <img src={Caneta} alt="Caneta Espaco Criativo" />
                         Espaço Criativo
                     </button>
+                    </a>
+                    
                     <Button
                 texto="Quero Personalizar" />
-                </div>
+                </nav>
         </header>
     )
 }

@@ -1,7 +1,5 @@
 import style from "./GaleriaProdutos.module.css";
 import Button from "../../ui/Button/Button";
-import Camiseta from "../../../assets/imagens/camiseta_galeria.png";
-import Azulejo from "../../../assets/imagens/azulejos.png";
 import Canecas from "../../../assets/imagens/canecas.png";
 
 export default function GaleriaProdutos() {
