@@ -1,0 +1,20 @@
+.como_comprar{
+    width: 100%;
+    background-color: #ff5757;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+    padding: 30px;
+
+    & h1{
+        color: #fff;
+        font-style: normal;
+
+    }
+}
+.primeiros_passos, 
+.ultimos_passos{
+    display: flex;
+    gap:20px;
+}

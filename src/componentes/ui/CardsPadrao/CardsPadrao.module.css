@@ -1,0 +1,27 @@
+.passo{
+    width: 356px;
+    padding: 28px;
+    gap: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 14px;
+
+    & p{
+        font-size: 17px;
+    }
+    & img{
+        width: 220px ;
+        height: 235px;
+        object-fit: contain;
+    }
+}
+
+.negrito{
+    font-weight: 800;
+}
+.passo:hover{
+    transform: scale(1.04);
+}

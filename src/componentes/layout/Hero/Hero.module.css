@@ -12,6 +12,8 @@
 
   & h1 {
     font-size: 40px;
+    font-weight: 700;
+
   }
   & .rosa {
     color: #ff5757;

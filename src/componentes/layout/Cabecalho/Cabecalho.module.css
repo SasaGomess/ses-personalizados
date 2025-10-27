@@ -1,4 +1,6 @@
 header {
+  position: fixed;
+  left: 10%;
   margin: auto;
   width: 80%;
   display: flex;
@@ -8,11 +10,12 @@ header {
  gap: 15%;
   background-image: linear-gradient(
     to right,
-    rgb(241, 241, 241),
-    rgb(221, 221, 221)
+    rgba(241, 241, 241, 0.749),
+    rgba(221, 221, 221, 0.649)
   );
   border-radius: 100px;
   font-family: "Poppins", sans-serif;
+  z-index: 1000;
 
   & img {
     width: 65px;

@@ -4,7 +4,7 @@ import Canecas from "../../../assets/imagens/canecas.png";
 
 export default function GaleriaProdutos() {
   return (
-    <section className={style.galeria}>
+    <section className={style.galeria} id="galeria_fotos">
       <h1>Conheça os Favoritos dos nossos Clientes</h1>
 
       <div className={style.galeria_caneca}>
