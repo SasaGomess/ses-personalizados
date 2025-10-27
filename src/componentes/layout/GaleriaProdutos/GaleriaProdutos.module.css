@@ -69,9 +69,7 @@
 .produtos_copos_conteudo {
   background-image: url(../../../assets/imagens/coposgarrafas.png);
 }
-.produtos_camiseta_conteudo {
-  background-image: url(../../../assets/imagens/camiseta_galeria.png);
-}
+
 .produtos_camiseta_conteudo,
 .produtos_azulejos_conteudo,
 .produtos_copos_conteudo {
@@ -85,6 +83,12 @@
   border-radius: 15px;
   box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.185);
   transition: 0.2s ease-in all;
+}
+.produtos_camiseta_conteudo {
+  width: 360px;
+  background-position: top;
+  height: 513px;
+  background-image: url(../../../assets/imagens/camiseta_galeria.png);
 }
 .produtos_azulejos_conteudo {
   background-image: url(../../../assets/imagens/azulejos.png);
