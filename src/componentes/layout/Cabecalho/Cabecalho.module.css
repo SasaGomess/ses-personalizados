@@ -1,4 +1,4 @@
-header {
+.header {
   position: fixed;
   left: 10%;
   margin: auto;
@@ -6,7 +6,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
- gap: 15%;
+  gap: 15%;
   background-image: linear-gradient(
     to right,
     rgba(241, 241, 241, 0.749),
@@ -15,20 +15,22 @@ header {
   border-radius: 100px;
   font-family: "Poppins", sans-serif;
   z-index: 1000;
-
-  & img {
-    width: 65px;
-    height: 65px;
-  }
 }
+
+.header img {
+  width: 65px;
+  height: 65px;
+}
+
 
 .links_conteudo,
 button {
   display: flex;
 }
 
+
 .links_conteudo {
- width: 100%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   gap: 2%;
@@ -36,11 +38,12 @@ button {
   padding-right: 10px;
 }
 
-a{
+a {
   text-decoration: none;
-    font-weight: 700;
-    color: #222;
+  font-weight: 700;
+  color: #222;
 }
+
 
 .espaco_criativo {
   justify-content: center;
@@ -54,12 +57,14 @@ a{
   border: 2px solid transparent;
   gap: 12px;
   background-color: #fff;
-
-  & img {
-    width: 22px;
-    height: 22px;
-  }
 }
+
+
+.espaco_criativo img {
+  width: 22px;
+  height: 22px;
+}
+
 .espaco_criativo:hover {
   background: linear-gradient(white, white) padding-box,
     linear-gradient(
@@ -77,4 +82,98 @@ a{
   border-color: transparent;
   transform: scale(1.07);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 89%;
+   
+  }
+  .links_conteudo {
+    font-size: 14px;
+  }
+  .espaco_criativo {
+    font-size: 14px;
+  }
+}
+
+
+.menu_btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 0;
+}
+
+.menu_btn span,
+.menu_btn > span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #6624ff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* definindo classes bar1, bar2, bar3 (padrão) */
+.bar1 { transform: none; }
+.bar2 { opacity: 1; }
+.bar3 { transform: none; }
+
+/* classes de estado "ativo" (quando menu aberto) */
+.bar1Active {
+  transform: rotate(55deg) translateY(15px);
+}
+.bar2Active {
+  opacity: 0;
+}
+.bar3Active {
+  transform: rotate(-55deg) translateY(-15px);
+}
+
+@media screen and (max-width: 900px) {
+  .header{
+    background-image: none;
+    width: 80%;
+    background-color: #ffffffd5;
+    border-radius: 20px;
+    padding: 20px;
+   
+
+  }
+
+  .menu_btn {
+    display: flex;
+    left: 0;
+  }
+
+
+  .links_conteudo {
+    position: absolute;
+    width: fit-content;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    align-items:center;
+    background-color: #f5f5f5;
+    gap: 25px;
+    padding: 30px 20px;
+    transform: translateY(-20%);
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    border-top: 1px solid #eee;
+  }
+
+  /* quando aberto */
+  .menu_aberto {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

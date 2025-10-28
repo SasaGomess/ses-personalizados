@@ -1,52 +1,50 @@
-.sobreSes{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:40px;
+.sobreSes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 
-    padding: 0 10%;
+  padding: 0 10%;
 
-    & p{
-        font-size: 20px;
-    }
+  & p {
+    font-size: 20px;
+  }
 }
 
-.sobre_imagens{
-    width: 100%;
-    display: flex;
-    gap: 5%;
-    background-color: #FFE66D;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
+.sobre_imagens {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  background-color: #ffe66d;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 20px;
+  & p {
+    width: 46%;
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  & .card_dois {
+    width: 45%;
+    height: 490px;
     border-radius: 20px;
-    & p{
-        width: 46%;
-       font-size: 23px;
-        font-weight: 700;
-    }
-
-
-    & .card_dois{
-        width: 45%;
-        height: 490px;
-        border-radius: 20px;
-        background-image: url(../../../assets/imagens/mae_filha.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-
+    background-image: url(../../../assets/imagens/mae_filha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
-.sparkle{
-    position: absolute;
-    z-index: 1;
-    top: 5%;
-    right: 90%;
-    animation: spin 6s linear infinite;
+.sparkle {
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  right: 90%;
+  animation: spin 6s linear infinite;
 }
 
 @keyframes spin {
@@ -55,5 +53,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sobreSes{
+    text-align: center;
+  }
+  .sobre_imagens {
+    flex-direction: column-reverse;
+    padding: 60px;
+    
+
+    & .sparkle{
+      display: none;
+    }
+    & .card_dois, p {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

@@ -18,6 +18,12 @@ export default function GaleriaProdutos() {
 
 
       <div className={style.galeria_produtos_card}>
+         <div className={style.produtos_canecas_conteudo}>
+          <div className={style.produto_descricao}>
+            Canecas
+            <Button texto="Ver Tudo" />
+          </div>
+        </div>
 
         <div className={style.produtos_copos_conteudo}>
           <div className={style.produto_descricao}>

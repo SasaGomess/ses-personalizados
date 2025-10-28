@@ -5,13 +5,16 @@ import PassoTres from "../../../assets/imagens/Passo3.png";
 import PassoQuatro from "../../../assets/imagens/Passo4.png";
 import PassoCinco from "../../../assets/imagens/Passo5.png";
 import CardsPadrao from "../../ui/CardsPadrao/CardsPadrao";
+import Sparkle from '../../../assets/imagens/sparkle.png'
 
 export default function ComoFazerPedido() {
   return (
     <section className={style.como_comprar} id="como_personalizar">
         <h1>Como Fazer o Seu Pedido</h1>
+        <img className={style.sparkle1} src={Sparkle} alt="" />
 
         <div className={style.primeiros_passos}>
+          
             <CardsPadrao
             img={PassoUm}
             titulo="Escolha o produto"
@@ -28,6 +31,7 @@ export default function ComoFazerPedido() {
             texto="Selecione aqui Clique em “Quero Personalizar” para mandar pelo WhatsApp."
              />
         </div>
+        <img className={style.sparkle2} src={Sparkle} alt="" />
         <div className={style.ultimos_passos}>
             <CardsPadrao
             img={PassoQuatro}
@@ -38,7 +42,9 @@ export default function ComoFazerPedido() {
             img={PassoCinco}
             titulo="Prontinho!"
             texto="Finalize a compra e é só esperar seu pedido chegar" />
+            
         </div>
+        <img className={style.sparkle3} src={Sparkle} alt="" />
     </section>
   );
 }

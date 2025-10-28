@@ -1,20 +1,67 @@
-.como_comprar{
-    width: 100%;
-    background-color: #ff5757;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    flex-direction: column;
-    padding: 80px;
+.como_comprar {
+  width: 100%;
+  background-color: #ff5757;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+  padding: 80px;
 
-    & h1{
-        color: #fff;
-        font-style: normal;
-
-    }
+  & h1 {
+    color: #fff;
+    font-style: normal;
+  }
 }
-.primeiros_passos, 
-.ultimos_passos{
+.primeiros_passos,
+.ultimos_passos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.sparkle1,
+.sparkle2,
+.sparkle3 {
+  position: absolute;
+  display: none;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .primeiros_passos,
+  .ultimos_passos {
+    flex-wrap: wrap;
+  }
+  .sparkle1 {
     display: flex;
-    gap:20px;
+    left: 5%;
+    top: 2%;
+  }
+  .sparkle2 {
+    display: flex;
+    left: 80%;
+    top: 40%;
+  }
+  .sparkle3 {
+    display: flex;
+    left: 5%;
+    top: 55%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .sparkle1,
+  .sparkle2,
+  .sparkle3 {
+    position: absolute;
+    display: none;
+    animation: spin 6s linear infinite;
+  }
 }
