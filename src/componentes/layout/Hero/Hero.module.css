@@ -51,11 +51,21 @@
 }
 @media screen and (max-width: 630px) {
   .hero {
-    padding: 60px 0 0 0;
+    padding: 160px 0 60px 0;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../../../assets/imagens/produtos2.png);
+    background-position: top;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-color: #000000c2;
+    background-attachment: fixed;
+
+    & h1, p{
+      color: #ffffff;
+    }
   }
   .hero_conteudo {
     justify-content: center;
