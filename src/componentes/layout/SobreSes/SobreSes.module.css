@@ -77,6 +77,13 @@
 
 @media screen and (max-width: 630px) {
   .sobre_imagens{
-    padding: 5px;
+    padding: 10px;
+    background-color: transparent;
+    
+    & p {
+    font-size: 15px;
+  }
+    
     }
 }
+
