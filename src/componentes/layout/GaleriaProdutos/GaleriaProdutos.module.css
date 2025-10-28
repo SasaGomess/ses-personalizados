@@ -155,7 +155,7 @@
     display: none;
   }
   .galeria_produtos_card{
-    width: 75%;
+    width: 90%;
   }
   .produtos_canecas_conteudo{
     display: flex;
@@ -169,7 +169,7 @@
   .produtos_copos_conteudo,
   .produtos_azulejos_conteudo,
   .produtos_camiseta_conteudo {
-    box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.04);
   }
   
 }
