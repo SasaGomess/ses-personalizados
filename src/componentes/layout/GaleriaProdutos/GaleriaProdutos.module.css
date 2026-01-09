@@ -34,7 +34,7 @@
 
   & .button_canecas {
     position: absolute;
-    width:50%;
+    width: 50%;
     height: 45px;
     display: flex;
     background-color: #ffffff;
@@ -63,10 +63,9 @@
   gap: 5%;
   justify-content: space-evenly;
 }
-.produtos_canecas_conteudo{
+.produtos_canecas_conteudo {
   display: none;
 }
-
 
 .produtos_canecas_conteudo,
 .produtos_camiseta_conteudo,
@@ -80,36 +79,38 @@
   justify-content: center;
   align-items: end;
   border-radius: 15px;
-  box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.185);
+  box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.064);
   transition: 0.2s ease-in all;
 }
 .produtos_camiseta_conteudo {
   width: 360px;
-  background-position: top;
-  height: 513px;
+  background-position: center;
+  height: 493px;
+
   background-image: url(../../../assets/imagens/camiseta_galeria.png);
 }
 .produtos_copos_conteudo {
   background-image: url(../../../assets/imagens/coposgarrafas.png);
 }
-.produtos_canecas_conteudo{
+.produtos_canecas_conteudo {
   background-image: url(../../../assets/imagens/canecas_galeria.png);
 }
 .produtos_azulejos_conteudo {
   background-image: url(../../../assets/imagens/azulejos.png);
 }
 .produto_descricao {
-  background-color: #ffffff;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 15px;
-  gap: 10px;
+  gap: 5px;
+  color: #0b071e;
+  font-weight: 600;
   border-radius: 0 0 15px 15px;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 .produtos_camiseta_conteudo:hover,
 .produtos_azulejos_conteudo:hover,
@@ -118,8 +119,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .galeria{
-    & h1{
+  .galeria {
+    & h1 {
       text-align: center;
     }
   }
@@ -143,33 +144,53 @@
   .produtos_azulejos_conteudo,
   .produtos_camiseta_conteudo {
     width: 100%;
+    height: 932px;
+  }
+  .produtos_camiseta_conteudo:hover,
+  .produtos_azulejos_conteudo:hover,
+  .produtos_copos_conteudo:hover {
+    transform: scale(1.02);
+    
+  }
+  .produtos_camiseta_conteudo {
+    background-position: top;
   }
   .produto_descricao {
-    padding: 10px;
+    padding-bottom: 50px;
+    font-size: 40px;
   }
 }
-@media screen and (max-width: 630px){
-
-  .galeria_caneca{
+@media  screen and (max-width: 768px) {
+  .produtos_canecas_conteudo,
+  .produtos_copos_conteudo,
+  .produtos_azulejos_conteudo,
+  .produtos_camiseta_conteudo {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .galeria_caneca {
     width: 90%;
     display: none;
   }
-  .galeria_produtos_card{
+  .galeria_produtos_card {
     width: 90%;
   }
-  .produtos_canecas_conteudo{
+  .produtos_canecas_conteudo {
     display: flex;
   }
-.produtos_camiseta_conteudo:hover,
-.produtos_azulejos_conteudo:hover,
-.produtos_copos_conteudo:hover {
-  transform: none;
-}
- .produtos_canecas_conteudo,
+  .produto_descricao{
+    font-size: 30px;
+  }
+  .produtos_camiseta_conteudo:hover,
+  .produtos_azulejos_conteudo:hover,
+  .produtos_copos_conteudo:hover {
+    transform: none;
+  }
+  .produtos_canecas_conteudo,
   .produtos_copos_conteudo,
   .produtos_azulejos_conteudo,
   .produtos_camiseta_conteudo {
     box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.04);
   }
-  
 }
