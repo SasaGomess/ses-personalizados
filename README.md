@@ -61,11 +61,11 @@ Você vai precisar ter instalado:
 
 #### Clone o repositório:
 
-``git clone https://github.com/EyeGenesis/EyeGen-FrontEnd.git``
+``git clone https://github.com/SasaGomess/ses-personalizados.git``
 
 #### Entre no diretório:
 
-``cd eyegen-frontend``
+``cd ses-personalizados``
 
 
 #### Instale as dependências e rode o projeto:
